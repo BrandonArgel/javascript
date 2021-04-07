@@ -53,8 +53,15 @@ const pasarAlturaACms = persona => ({
 
 var personasCms = personas.map(pasarAlturaACms)
 
-var acum = 0
+/* Otra manera de hacerlo */
+/* var acum = 0
 
-for(var i = 0; i < personasAltas.length; i++){
-    
-}
+for(var i = 0; i < personas.length; i++){
+    acum += personas[i].cantidadDeLibros
+} */
+
+const reducer = (acum, { cantidadDeLibros }) => acum + cantidadDeLibros
+
+var totalDeLibros = personas.reduce(reducer, 0)
+
+console.log(`En total todos tienen ${totalDeLibros} libros`)

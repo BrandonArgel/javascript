@@ -1,3 +1,3 @@
 # JavaScript
 
-Ecmascript +6 vanilla JS
+Ecmascript +6, vanilla JS

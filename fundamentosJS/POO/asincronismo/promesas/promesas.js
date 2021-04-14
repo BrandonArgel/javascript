@@ -67,3 +67,5 @@ obtenerPokemon("pikachu")
         return obtenerPokemon("arceus")
     })
     .catch(onError)
+
+    console.log("Hola soy brandon <3");

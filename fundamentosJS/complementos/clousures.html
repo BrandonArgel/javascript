@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clousures</title>
+  </head>
+  <body>
+    <script>
+        function crearSaludo(finalDeFrase){
+            return function(nombre){
+                console.log(`Hola ${nombre} ${finalDeFrase}`)
+            }
+        }
+
+        const saludoArgentino = crearSaludo('che')
+        const saludoMexicano = crearSaludo('buey')
+        const saludoColombiano = crearSaludo('amigo')
+
+        saludoArgentino('Brandon') // Hola Brandon che
+        saludoMexicano('Brandon') // Hola Brandon buey
+        saludoColombiano('Brandon') // Hola Brandon amigo 
+
+    </script>
+  </body>
+</html>

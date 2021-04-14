@@ -1,17 +1,3 @@
-/* // Response con JS Vanilla
-const URL = "https://pokeapi.co/api/v2/"
-const PEOPLE_URL = "pokemon/:name"
-
-const responseFn = response => response.json()
-const pokemonFn = pokemon => {console.log(`Hola yo soy ${pokemon.name} y peso ${pokemon.weight.toString().slice(0, -1)} kilogramos y mi habilidad principal es ${pokemon.abilities[0].ability.name}`)}
-const errorFn = error => {console.error('Error: ', error)}
-
-  let URL_FULL = `${URL}${PEOPLE_URL.replace(':name', "pikachu")}`
-  fetch( URL_FULL ) // Entrega una promesa
-  .then( responseFn )
-  .then( pokemonFn )
-  .catch( errorFn ) */
-
 const URL = 'https://pokeapi.co/api/v2/'
 const PEOPLE_URL = 'pokemon/:name'
 
